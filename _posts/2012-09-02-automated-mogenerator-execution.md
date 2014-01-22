@@ -102,7 +102,7 @@ When the project lives longer, then it may happen, that people may end up on dif
 of mogenerator. That could generate some noise when these generate slightly different output.
 Script could check expected and actual mogenerator version.
 
-Other are of improvement - checking orphaned files. When project goes on and model evolves,
+Other area of improvement - checking orphaned files. When project goes on and model evolves,
 sooner or later some entities will be removed or renamed. In that case script could check
 for files that no longer have responding entities.
 
