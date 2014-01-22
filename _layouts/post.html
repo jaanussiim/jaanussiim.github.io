@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>JaanusSiim</title>
+		<link rel="stylesheet" href="/css/styles.css" type="text/css" />
+		<link rel="stylesheet" href="/css/code.css" type="text/css" />
+	</head>
+	<body>
+		<div class="header-wrapper">
+			<div class="header pagewidth">
+				<!-- TITLE -->
+				<h1><a href="#">JaanusSiim</a></h1>
+				<h2>MOBILE (IPHONE, ANDROID) NUT WITH SOME RUBY LOVE</h2>
+				<!-- END TITLE -->
+			</div>
+		</div>
+		
+		{% include menu.html %}
+		
+		<div class="pagewidth">
+			<div class="page-wrap">
+				<div class="content">
+			    <h3>{{ page.title }}</h3>
+			    <h5>{{ page.date | date: "%B %e, %Y" }}</h5>
+			    <p>
+    				{{ content }}
+    			</p>
+    			<p>
+    				<h2>Tags: {{ page.tags | array_to_sentence_string }}</h2>
+    			</p>
+					<!-- END CONTENT -->
+				</div>
+				
+				{% include sidebar.html %}
+			
+				<div class="clear"></div>		
+			</div>
+
+			{% include footer.html %}
+
+		</div>
+	</body>
+</xhtml>

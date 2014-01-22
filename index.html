@@ -1,1 +1,11 @@
-Hello World
+---
+layout: layout
+title: JaanusSiim
+---
+
+{% for post in site.posts %}
+<p>
+	<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+	<h5>Tags: {{ post.tags | array_to_sentence_string }} </h5>
+<p>
+{% endfor %}
