@@ -149,3 +149,7 @@ So there actually is no magic...
 * When lifting pin under the users finger, it would be better to use top position of drag
 end for new annotation location, instead of moving it back under user finger. That would
 allow for more precise location selection. And would avoid multiple failed move attempts :)
+
+All code is available on [GitHub][1].
+
+[1]: https://github.com/jaanussiim/ios-demo-lifter
