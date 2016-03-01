@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Making Core Data usage saner
 tags:
 - ios, core data

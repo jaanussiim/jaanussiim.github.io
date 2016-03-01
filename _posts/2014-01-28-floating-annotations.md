@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Floating annotations
 tags:
 - ios, map, annotation, mapkit

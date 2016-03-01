@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: A library repository for midlet-builder
 tags:
 - other

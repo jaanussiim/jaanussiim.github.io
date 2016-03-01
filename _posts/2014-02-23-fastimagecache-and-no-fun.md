@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: FastImageCache and no fun
 tags:
 - ios, fastimagecache, gotcha
@@ -22,7 +22,7 @@ Amazon S3 I used FastImageCache to present pulled images.
 
 Everything was set up by instructions
 
-{% highlight objc linenos %}
+{% highlight swift linenos %}
     FICImageFormat *imagesListThumbnail = [[FICImageFormat alloc] init];
     imagesListThumbnail.name = BeerImageListThumbnail;
     imagesListThumbnail.family = BeerImageFamilyName;

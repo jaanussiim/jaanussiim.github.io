@@ -1,1 +1,2 @@
-pygments: TRUE
+#highlighter: rouge
+highlighter: pygments

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: How I made a backup from public wiki
 tags:
 - other

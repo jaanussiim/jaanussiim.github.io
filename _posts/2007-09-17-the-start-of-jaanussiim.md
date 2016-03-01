@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: The start of JaanusSiim
 tags:
 - jaanussiim

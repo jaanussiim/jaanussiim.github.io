@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: MIDlet localization done right
 tags:
 - j2me

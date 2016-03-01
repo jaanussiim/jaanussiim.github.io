@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Midlet-engine - J2ME on Rails?
 tags:
 - j2me

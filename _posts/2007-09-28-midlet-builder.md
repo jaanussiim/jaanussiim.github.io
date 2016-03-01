@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Midlet-builder
 tags:
 - ruby

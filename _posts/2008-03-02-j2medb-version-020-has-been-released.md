@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: J2MEDB version 0.2.0 has been released
 tags:
 - j2me

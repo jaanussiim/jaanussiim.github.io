@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Starting new project - Wesnoth skirmishes
 tags:
 - ios

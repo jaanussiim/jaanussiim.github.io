@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Automated mogenerator execution
 tags:
 - ios, core data, mogenerator

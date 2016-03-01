@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: rock
 title: Blast from the past
 tags:
 - j2me
