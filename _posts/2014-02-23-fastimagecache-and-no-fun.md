@@ -22,7 +22,7 @@ Amazon S3 I used FastImageCache to present pulled images.
 
 Everything was set up by instructions
 
-{% highlight swift linenos %}
+{% highlight objc %}
     FICImageFormat *imagesListThumbnail = [[FICImageFormat alloc] init];
     imagesListThumbnail.name = BeerImageListThumbnail;
     imagesListThumbnail.family = BeerImageFamilyName;
@@ -41,7 +41,7 @@ Everything was set up by instructions
 
 And callback in view controller:
 
-{% highlight objc linenos %}
+{% highlight objc %}
     FICImageCacheCompletionBlock completionBlock = ^(id <FICEntity> entity, NSString *formatName, UIImage *image) {
         imageView.image = image;
         [imageView.layer addAnimation:[CATransition animation] forKey:kCATransition];
@@ -66,7 +66,7 @@ wired up again, but my callback was not called |-(
 Thank god for open source. Time to dive into FastImageCache source. After some poking around
 I ended up at this piece of code:
 
-{% highlight objc linenos %}
+{% highlight objc %}
         FICImageFormatDevices currentDevice = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? FICImageFormatDevicePad : FICImageFormatDevicePhone;
         for (FICImageFormat *imageFormat in formats) {
         
@@ -81,7 +81,7 @@ I ended up at this piece of code:
 
 Problem was in my setup:
 
-{% highlight objc linenos %}
+{% highlight objc %}
 	...
     imagesListThumbnail.devices = FICImageFormatDevicePhone;
 	...

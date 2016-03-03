@@ -19,7 +19,7 @@ Simple rect with image in center should be enough to test the theory.
 
 Standard code to show annotation view on map:
 
-{% highlight objc linenos %}
+{% highlight objc %}
 - (MKAnnotationView *)mapView:(MKMapView *)mapView 
             viewForAnnotation:(id <MKAnnotation>)annotation {
     FloatingAnnotationView *annotationView 
@@ -37,7 +37,7 @@ Standard code to show annotation view on map:
 
 And here is custom annotation we will be using:
 
-{% highlight objc linenos %}
+{% highlight objc %}
 @implementation FloatingAnnotationView
 
 - (id)initWithAnnotation:(id <MKAnnotation>)annotation 
@@ -66,7 +66,7 @@ Success!!!
 
 Making the pin draggable is just one line of code
 
-{% highlight objc linenos %}
+{% highlight objc %}
 ....
         [self setDraggable:YES];
 ....        
@@ -75,14 +75,14 @@ Making the pin draggable is just one line of code
 Now to make it 'hover'... First we need to figure out in what dragging state pin currently
 is. For this we need to override 'setDragState' in our custom annotation view.
 
-{% highlight objc linenos %}
+{% highlight objc %}
 - (void)setDragState:(MKAnnotationViewDragState)newDragState animated:(BOOL)animated
 {% endhighlight %}
 
 Let's also add some room for annotation image to 'float' in. And we position image at
 the bottom of annotation.
 
-{% highlight objc linenos %}
+{% highlight objc %}
 ...
         CGRect frame = CGRectMake(0, 0, image.size.width, image.size.height * 2);
 
@@ -95,7 +95,7 @@ the bottom of annotation.
 
 Here comes the magic:
 
-{% highlight objc linenos %}
+{% highlight objc %}
 ...
 - (void)setDragState:(MKAnnotationViewDragState)newDragState animated:(BOOL)animated {
     [super setDragState:newDragState animated:animated];
@@ -124,7 +124,7 @@ image is moved back to bottom of animation view. Thus giving the illusion of flo
 Note: there is some code in view controller to reset annotation dragging state. Otherwise
 animations would have stayed in odd state.
 
-{% highlight objc linenos %}
+{% highlight objc %}
 ...
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view 
                                  didChangeDragState:(MKAnnotationViewDragState)newState 
