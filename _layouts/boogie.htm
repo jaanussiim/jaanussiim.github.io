@@ -36,7 +36,12 @@
             <p class="lead blog-description">Freelance iOS developer</p>
         </div>
 
-        {{ content }}
+		<div class="row">
+			<div class="col-sm-8 blog-main">
+    	    	{{ content }}
+    	    </div>
+    	    {% include sidebar.html %}
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
