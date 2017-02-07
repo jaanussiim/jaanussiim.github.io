@@ -12,7 +12,7 @@ We all have done it. When working on something you find a piece of code that cou
 
 As you were developing **furry-guide** in parallel with the main app, you included some of your favorites libraries as dependency to it. Maybe you just wanted to used that awesome logging framework you use everywhere. Or you needed some networking functionality and marked [Alamofire][1] version 4.1.0 as dependency for **furry-guide**.
 
-Overall this should not be an issue. These dependencies are you go to helpers. And in every project you will be using **furry-guide**, they will be included anyway. So there is no real overhead. It's just convenient.
+Overall this should not be an issue. These dependencies are you go to helpers. In every project where you will be using **furry-guide**, they will be included anyway. So there is no real overhead. It's just convenient.
 
 By defining these dependencies to **furry-guide**, you have created a small hurdle for using it. Maybe I'm using different logging library and now **furry-guide** will pull in extra one not used anywhere else. Maybe I need a different version of Alamofire? Or I'm using URLSession everywhere.
 
