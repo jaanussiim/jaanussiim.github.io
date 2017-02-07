@@ -8,7 +8,7 @@ published: true
 
 ### The in
 
-We all have done it. Working on something you find a piece of code that could be extracted into a separate library. Lets call it **furry-guide**. **Furry-guide** could also be useful for other developers and as a good open source contributor you upload it to GitHub. You also make sure that it can be used with popular dependency managers.
+We all have done it. When working on something you find a piece of code that could be extracted into a separate library. Lets call it **furry-guide**. **Furry-guide** could also be useful for other developers and as a good open source contributor you upload it to GitHub. You also make sure that it can be used with popular dependency managers.
 
 As you were developing **furry-guide** in parallel with the main app, you included some of your favorites libraries as dependency to it. Maybe you just wanted to used that awesome logging framework you use everywhere. Or you needed some networking functionality and marked [Alamofire][1] version 4.1.0 as dependency for **furry-guide**.
 
