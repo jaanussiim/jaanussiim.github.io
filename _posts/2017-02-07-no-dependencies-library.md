@@ -2,7 +2,7 @@
 layout: rock
 title: No dependencies library
 tags:
-- ios, swift, dependency, design, library
+- ios, swift, dependency, design, library, programming
 published: true
 ---
 
