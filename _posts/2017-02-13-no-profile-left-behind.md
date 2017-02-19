@@ -53,7 +53,7 @@ class ImageFetch: RemoteFetch {
 
 With minimal changes outside presentation logic I was able to leverage the usual pull/cache/present logic that was already available for other images.
 
-![Find movies profile intials](/images/profile/Filled.png)
+![Find movies profile details](/images/profile/Filled.png)
 
 ## Conclusion
 
