@@ -28,7 +28,7 @@ I had a different idea that I wanted to experiment with, but I never got to it..
 
 When working on update for [TenPair][3], I also wanted to re-work the underlying UI layout logic. Basic idea was to use something that works well out of the box and could handle screen rotations/changes. Could I tie game UI in SpriteKit to auto layout from UIKit? And if layout changes on system level, this will be communicated to sprite elements automatically. 
 
-After some playing around I arrived to a solution implemented in [GameKit][4]. On high level we have screens, views and buttons that are backed by native views. When a screen is loaded, it will use auto layout to position children. In the background we build an invisible shadow UI on UIKit level that will be tied to game UI elements. When ever there is UI layout change, game element will be updated accordingly.
+After some playing around I arrived to a solution implemented in [SpriteKitUI][4]. On high level we have screens, views and buttons that are backed by native views. When a screen is loaded, it will use auto layout to position children. In the background we build an invisible shadow UI on UIKit level that will be tied to game UI elements. When ever there is UI layout change, game element will be updated accordingly.
 
 As a rule, game element sizes and positions will never be defined in code. Only layout will be described and after native UI layer has finished, it will be propagated to game UI level.
 
@@ -70,4 +70,4 @@ Overall this has been a good proof of concept for offloading UI layout managemen
 [1]: http://cocos2d.org
 [2]: https://java.com/en/download/faq/whatis_j2me.xml
 [3]: https://github.com/coodly/ios-ten-pair
-[4]: https://github.com/coodly/GameKit
+[4]: https://github.com/coodly/SpriteKitUI
